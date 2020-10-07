@@ -1,8 +1,8 @@
 import os
-import pyttsx3
+import pyttsx3 as p
 
-pyttsx3.speak("Welcome Javis at your service")
-print("Welcome Javis at your service")
+p.speak("Welcome Javis at your service, I am a personal Assistant of Ramakrishna")
+print("Welcome Javis at your service, I am a personal Assistant of Ramakrishna")
 
 
 while True:
@@ -11,32 +11,32 @@ while True:
 	p = input()
 
 	if ("don't" in p) or ("dont" in p) or ("do not" in p) or ("no need to" in p) and (("chrome" in p) or ("browser" in p)):
-		pyttsx3.speak("OK sir")
+		p.speak("OK sir")
 		print("OK sir")
 
 	elif (("run" in p) or ("execute" in p) or ("open" in p )) and (("chrome" in p) or ("browser" in p)):
-		pyttsx3.speak("Opening chrome browser")
+		p.speak("Opening chrome browser")
 		os.system("start chrome")	
 	
 	elif ("don't" in p) or ("dont" in p) or ("do not" in p) or ("no need to" in p) and (("notepad" in p) or ("editor" in p)):
-		pyttsx3.speak("OK sir")
+		p.speak("OK sir")
 		print("OK sir")
 
 	elif (("run" in p) or  ("execute" in p ) or ("open" in p )) and  (("notepad" in p) or ("editor" in p)) :
-		pyttsx3.speak("Opening notepad")
+		p.speak("Opening notepad")
 		os.system("notepad")
 
 	elif (("run" in p) or  ("execute" in p ) or ("open" in p )) and (("player" in p) or ("media" in p)):
-		pyttsx3.speak("Opening VLC media player")
+		p.speak("Opening VLC media player")
 		os.system("VLC media player")
 
 	elif ("don't" in p) or ("dont" in p) or ("do not" in p) or ("no need to" in p) and ("player" in p) or ("media" in p):
-		pyttsx3.speak("OK sir")
+		p.speak("OK sir")
 		print("OK sir")
 
 	elif  ("exit" in p) or ("Exit" in p) or ("quit" in p) or ("Quit" in p):
 		break
 
 	else:
-	  # pyttsx3.speak("Incorrect input")
+	  # p.speak("Incorrect input")
 	  print("Sorry!! please input correct task :)")
